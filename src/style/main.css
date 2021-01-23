@@ -1,0 +1,89 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #171819;
+}
+
+.box {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  -webkit-animation: move 6s linear infinite;
+          animation: move 6s linear infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0;
+    left: 0;
+    border-radius: 0%;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 120px);
+    background-color: #ecc4ff;
+    border-radius: 50%;
+  }
+  50% {
+    top: calc(100% - 120px);
+    left: calc(100% - 120px);
+    background-color: aqua;
+    border-radius: 0%;
+  }
+  75% {
+    top: calc(100% - 120px);
+    left: 0;
+    background-color: #d84173;
+    border-radius: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    border-radius: 0%;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 0;
+    left: 0;
+    border-radius: 0%;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 120px);
+    background-color: #ecc4ff;
+    border-radius: 50%;
+  }
+  50% {
+    top: calc(100% - 120px);
+    left: calc(100% - 120px);
+    background-color: aqua;
+    border-radius: 0%;
+  }
+  75% {
+    top: calc(100% - 120px);
+    left: 0;
+    background-color: #d84173;
+    border-radius: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    border-radius: 0%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
